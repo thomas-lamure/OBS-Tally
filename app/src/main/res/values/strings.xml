@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OBS Tally</string>
+    <string name="start_button">Start</string>
+    <string name="stop_button">Stop</string>
+    <string name="endpoint_hint">Endpoint</string>
+    <string name="camera_hint">Camera</string>
+</resources>
