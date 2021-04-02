@@ -35,15 +35,15 @@ I like to run mine on Docker:
 docker run -d --name obs-tally -p 5672:5672 -p 15672:15672 -e RABBITMQ_DEFAULT_USER=<username> -e RABBITMQ_DEFAULT_PASS=<password> rabbitmq:3-management
 ```
 
-Do not forget to replace <username> and <password> by the corresponding values in the command line
+Do not forget to replace `<username>` and `<password>` by the corresponding values in the command line
 
 * Go to [http://localhost:15672/#/exchanges](http://localhost:15672/#/exchanges) and create a new exchange called `cam` with type `fanout`
 * Download the script [OBS-Tally.lua](OBS-Tally.lua)
-* Replace <username> and <password> by the corresponding values in the file
+* Replace `<username>` and `<password>` by the corresponding values in the file
 * Open OBS Studio and click on the menu `Tools` > `Scripts`
 * Click on the `+` sign on the bottom left of the window and select the script `OBS_Tally.lua`
 * Configure the script with `localhost` as endpoint and cam numbers on each scene (if there is no camera on a scene, use 0 as a placeholder)
-* Before building the Android app, create a `amqp.properties` file based on [`amqp.properties.sample`](amqp.properties.sample) and replace <username> and <password> by the corresponding values in the file
+* Before building the Android app, create a `amqp.properties` file based on [`amqp.properties.sample`](amqp.properties.sample) and replace `<username>` and `<password>` by the corresponding values in the file
 * Install the app on your android device and start it
 * At first run you will be prompted to accept to run the app as an overlay
 * Then enter the IP of your computer as endpoint and the cam number and click on `start`
